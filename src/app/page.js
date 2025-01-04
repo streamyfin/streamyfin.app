@@ -69,7 +69,7 @@ export default function HomePage() {
 
         <footer className="bg-transparent text-white py-4">
           <div className="container mx-auto text-center">
-            <p>&copy; 2024 Streamyfin. All rights reserved.</p>
+            <p>&copy; 2025 Streamyfin. All rights reserved.</p>
             <div className="flex justify-center space-x-4 mt-4">
               <a href="https://github.com/streamyfin" className="hover:underline">GitHub</a>
               <a href='https://discord.gg/aJvAYeycyY' className='hover:underline'>Discord</a>
