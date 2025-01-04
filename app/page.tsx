@@ -18,24 +18,24 @@ export default function Home() {
         <div className="flex flex-row gap-4 lg:gap-8 items-center">
           <div className="h-6 lg:h-8 aspect-square flex items-center justify-center">
             <Link href="https://discord.gg/aJvAYeycyY">
-            <Image
-              src={"/assets/images/discord.png"}
-              width={100}
-              height={100}
-              alt=""
-              className="object-contain"
-            />
+              <Image
+                src={"/assets/images/discord.png"}
+                width={100}
+                height={100}
+                alt=""
+                className="object-contain"
+              />
             </Link>
           </div>
           <div className="h-6 lg:h-8 aspect-square flex items-center justify-center">
             <Link href="https://github.com/streamyfin/streamyfin">
-            <Image
-              src={"/assets/images/github.png"}
-              width={100}
-              height={100}
-              alt=""
-            />
-            </Link> 
+              <Image
+                src={"/assets/images/github.png"}
+                width={100}
+                height={100}
+                alt=""
+              />
+            </Link>
           </div>
         </div>
       </header>
@@ -74,7 +74,7 @@ export default function Home() {
       </section>
       <footer className=" text-white py-16  mt-auto bg-[#9334E9]">
         <div className="container mx-auto text-center">
-          <p>&copy; 2024 Streamyfin. All rights reserved.</p>
+          <p>&copy; 2025 Streamyfin. All rights reserved.</p>
           <div className="flex justify-center space-x-4 mt-4">
             <a
               href="https://github.com/streamyfin/streamyfin"
