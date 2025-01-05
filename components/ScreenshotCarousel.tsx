@@ -86,7 +86,7 @@ export function ScreenshotCarousel() {
           Download support inside the app with transcoded downloads and
           background downloads, using the{" "}
           <Link
-            href="https://github.com/fredrikburmester/streamyfin-optimized-versions-server"
+            href="https://github.com/streamyfin/streamyfin-optimized-versions-server"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 underline"
@@ -136,6 +136,22 @@ export function ScreenshotCarousel() {
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (11).png",
     },
+    {
+      title: "Request Media",
+      subtitle: (
+        <div>
+          Request content directly in the app with {" "}
+          <Link href="https://github.com/Fallenbagel/jellyseerr" 
+          target="_blank" rel="noopener noreferrer" 
+          className="text-gray-400 underline"
+          >
+            Jellyseerr
+            </Link>{" "} 
+            integration. Discover, request, and track media with ease.
+        </div>
+      ),
+      link: "/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr.png", // Add the link to the image
+    }
   ];
 
   return (
