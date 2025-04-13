@@ -43,6 +43,45 @@ export default function Home() {
         <ScreenshotCarousel />
       </section>
       <section className="flex flex-col justify-center items-center px-4 mx-auto text-center mb-16">
+        <p className="text-2xl font-bold">
+        Companion plugin for Streamyfin
+        </p>
+        <div className="mt-4 max-w-2xl">
+          <p>
+          Allows for a centralised configuration of the Streamyfin application.
+          Configure and synchronize the apps settings or notifications!
+
+          With this plugin you allow the streamyfin application to do the following for all your users...
+          </p>
+        </div>
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center">
+            <img
+              src="/assets/images/screenshot1.png"
+              alt="Screenshot 1"
+              className="rounded-lg shadow-md"
+            />
+            <p className="mt-2 text-gray-700">Screenshot 1: Overview of the plugin's dashboard.</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="/assets/images/screenshot2.png"
+              alt="Screenshot 2"
+              className="rounded-lg shadow-md"
+            />
+            <p className="mt-2 text-gray-700">Screenshot 2: Configuration settings for notifications.</p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src="/assets/images/screenshot3.png"
+              alt="Screenshot 3"
+              className="rounded-lg shadow-md"
+            />
+            <p className="mt-2 text-gray-700">Screenshot 3: Synchronization options for user preferences.</p>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col justify-center items-center px-4 mx-auto text-center mb-16">
         <p className="text-2xl font-bold text-balance">
           A modern Jellyfin client with support for downloads, Live TV, skip
           intro & credits, trickplay image and more!
