@@ -54,31 +54,31 @@ export default function Home() {
           With this plugin you allow the streamyfin application to do the following for all your users...
           </p>
         </div>
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-8">
-          <div className="flex flex-col items-center">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-1 justify-end">
+          <div className="flex flex-col items-center w-2/3">
             <img
-              src="/assets/images/screenshot1.png"
+              src="/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr_2.PNG"
               alt="Screenshot 1"
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md h-150 w-150 object-cover"
             />
-            <p className="mt-2 text-gray-700">Screenshot 1: Overview of the plugin's dashboard.</p>
+            <p className="mt-1  text-sm">Automatically log in users into Jellyseerr</p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-2/3">
             <img
-              src="/assets/images/screenshot2.png"
+              src="/assets/screenshots/Screenshots_new/Iphone/Black/home.jpg"
               alt="Screenshot 2"
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md h-150 w-150 object-cover"
             />
-            <p className="mt-2 text-gray-700">Screenshot 2: Configuration settings for notifications.</p>
+            <p className="mt-1  text-sm">Custom Home screen using collections</p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center w-2/3">
             <img
-              src="/assets/images/screenshot3.png"
+              src="/assets/screenshots/Screenshots_new/Iphone/Black/notifications.png"
               alt="Screenshot 3"
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md h-159 w-159 object-cover"
             />
-            <p className="mt-2 text-gray-700">Screenshot 3: Synchronization options for user preferences.</p>
-          </div>
+            <p className="mt-1  text-sm">Notification support</p>
+          </div>  
         </div>
       </section>
       <section className="flex flex-col justify-center items-center px-4 mx-auto text-center mb-16">
