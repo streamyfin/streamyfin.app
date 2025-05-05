@@ -1,4 +1,5 @@
 import { ScreenshotCarousel } from "@/components/ScreenshotCarousel";
+import { FeatureCarousel } from "@/components/FeatureCarousel";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -42,46 +43,23 @@ export default function Home() {
       <section className="flex flex-col justify-center w-full items-center mb-12">
         <ScreenshotCarousel />
       </section>
-      <section className="flex flex-col justify-center items-center px-4 mx-auto text-center mb-16">
+      <section className="flex flex-col justify-center items-center px-4 mx-auto text-center mb-4">
         <p className="text-2xl font-bold">
-        Companion plugin for Streamyfin
+          Companion plugin for Streamyfin
         </p>
         <div className="mt-4 max-w-2xl">
-          <p>
-          Allows for a centralised configuration of the Streamyfin application.
-          Configure and synchronize the apps settings or notifications!
+          <p className="text-base">
+            Allows for a centralised configuration of the Streamyfin application.
+            Configure and synchronize the apps settings or notifications!
 
-          With this plugin you allow the streamyfin application to do the following for all your users...
+            With this plugin you allow the streamyfin application to do the following for all your users...
           </p>
         </div>
-        <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-1 justify-end">
-          <div className="flex flex-col items-center w-2/3">
-            <img
-              src="/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr_2.PNG"
-              alt="Screenshot 1"
-              className="rounded-lg shadow-md h-150 w-150 object-cover"
-            />
-            <p className="mt-1  text-sm">Automatically log in users into Jellyseerr</p>
-          </div>
-          <div className="flex flex-col items-center w-2/3">
-            <img
-              src="/assets/screenshots/Screenshots_new/Iphone/Black/home.jpg"
-              alt="Screenshot 2"
-              className="rounded-lg shadow-md h-150 w-150 object-cover"
-            />
-            <p className="mt-1  text-sm">Custom Home screen using collections</p>
-          </div>
-          <div className="flex flex-col items-center w-2/3">
-            <img
-              src="/assets/screenshots/Screenshots_new/Iphone/Black/notifications.png"
-              alt="Screenshot 3"
-              className="rounded-lg shadow-md h-159 w-159 object-cover"
-            />
-            <p className="mt-1  text-sm">Notification support</p>
-          </div>  
+        <div className="mt-2">
+          <FeatureCarousel />
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center px-4 mx-auto text-center mb-16">
+      <section className="flex flex-col justify-center items-center px-4 mx-auto text-center mb-20">
         <p className="text-2xl font-bold text-balance">
           A modern Jellyfin client with support for downloads, Live TV, skip
           intro & credits, trickplay image and more!
