@@ -43,8 +43,8 @@ export function FeatureCarousel() {
                     className="h-full w-auto object-contain"
                   />
                 </div>
-                <h3 className="mt-2 text-lg font-semibold">{feature.title}</h3>
-                <p className="text-base text-gray-400">{feature.subtitle}</p>
+                <h3 className={`mt-2 text-lg font-semibold`}>{feature.title}</h3>
+                <p className={`text-sm text-gray-400`}>{feature.subtitle}</p>
               </div>
             </CarouselItem>
           ))}

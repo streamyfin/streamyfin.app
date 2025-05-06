@@ -86,7 +86,7 @@ export function ScreenshotCarousel() {
           Download support inside the app with transcoded downloads and
           background downloads, using the{" "}
           <Link
-            href="https://github.com/streamyfin/streamyfin-optimized-versions-server"
+            href="https://github.com/streamyfin/optimized-versions-server"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 underline"

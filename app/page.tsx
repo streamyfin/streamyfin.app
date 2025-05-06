@@ -55,7 +55,7 @@ export default function Home() {
             With this plugin you allow the streamyfin application to do the following for all your users...
           </p>
         </div>
-        <div className="mt-2">
+        <div className="mt-4 mb-6">
           <FeatureCarousel />
         </div>
       </section>
