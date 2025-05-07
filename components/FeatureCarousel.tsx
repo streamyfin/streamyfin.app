@@ -17,11 +17,11 @@ const features = [
   {
     title: "Custom Home Screen",
     subtitle: "Customize your Home screen using collections",
-    link: "/assets/screenshots/Screenshots_new/Iphone/Black/home.jpg"
+    link: "/assets/screenshots/Screenshots_new/Iphone/Black/home.png"
   },
   {
     title: "Notifications",
-    subtitle: "Notification support",
+    subtitle: "Receive notifications for new episodes and more",
     link: "/assets/screenshots/Screenshots_new/Iphone/Black/notifications_2.png"
   }
 ];
