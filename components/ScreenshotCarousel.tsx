@@ -150,7 +150,16 @@ export function ScreenshotCarousel() {
             integration. Discover, request, and track media with ease.
         </div>
       ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr.png", // Add the link to the image
+      link: "/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr.png",
+    },
+    {
+      title: "Multi-language Support",
+      subtitle: (
+        <div>
+          Support for multiple languages, including German, Spanish, French, and Swedish, with more languages coming.
+        </div>
+      ),
+      link: "/assets/screenshots/Screenshots_new/Iphone/Black/localization screenshot.png",
     }
   ];
 

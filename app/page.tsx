@@ -1,4 +1,5 @@
 import { ScreenshotCarousel } from "@/components/ScreenshotCarousel";
+import { FeatureCarousel } from "@/components/FeatureCarousel";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -42,7 +43,23 @@ export default function Home() {
       <section className="flex flex-col justify-center w-full items-center mb-12">
         <ScreenshotCarousel />
       </section>
-      <section className="flex flex-col justify-center items-center px-4 mx-auto text-center mb-16">
+      <section className="flex flex-col justify-center items-center px-4 mx-auto text-center mb-4">
+        <p className="text-2xl font-bold">
+          Companion plugin for Streamyfin
+        </p>
+        <div className="mt-4 max-w-2xl">
+          <p className="text-base">
+            Allows for a centralised configuration of the Streamyfin application.
+            Configure and synchronize the apps settings or notifications!
+
+            With this plugin you allow the streamyfin application to do the following for all your users...
+          </p>
+        </div>
+        <div className="mt-4 mb-6">
+          <FeatureCarousel />
+        </div>
+      </section>
+      <section className="flex flex-col justify-center items-center px-4 mx-auto text-center mb-20">
         <p className="text-2xl font-bold text-balance">
           A modern Jellyfin client with support for downloads, Live TV, skip
           intro & credits, trickplay image and more!
