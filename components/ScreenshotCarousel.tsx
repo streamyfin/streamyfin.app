@@ -149,8 +149,17 @@ export function ScreenshotCarousel() {
             </Link>{" "} 
             integration. Discover, request, and track media with ease.
         </div>
-      ),
+      ), 
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr.png",
+    },
+    {
+      title: "Session View",
+      subtitle: (
+        <div>
+          As an server admin, you can view the sessions of your users in the app, including informations about Codec, device and playback method.
+        </div>
+      ),
+      link: "/assets/screenshots/Screenshots_new/Iphone/Black/session_view.png",
     },
     {
       title: "Multi-language Support",
