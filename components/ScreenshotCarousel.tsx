@@ -182,7 +182,7 @@ export function ScreenshotCarousel() {
                 <div className="h-full w-full flex flex-col items-center justify-center grow object-contain">
                   <Image
                     src={image.link}
-                    alt={image.title}
+                    alt={`${image.title} - Screenshot showing ${image.title.toLowerCase()} feature of Streamyfin app`}
                     width={300}
                     height={300}
                     className="h-full w-auto object-contain"
