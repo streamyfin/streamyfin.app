@@ -23,7 +23,7 @@ export default function Home() {
                 src={"/assets/images/discord.png"}
                 width={100}
                 height={100}
-                alt=""
+                alt="Discord icon"
                 className="object-contain"
               />
             </Link>
@@ -34,7 +34,7 @@ export default function Home() {
                 src={"/assets/images/github.png"}
                 width={100}
                 height={100}
-                alt=""
+                alt="Github icon"
               />
             </Link>
           </div>
