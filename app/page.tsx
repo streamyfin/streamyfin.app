@@ -12,7 +12,7 @@ export default function Home() {
             src={"/assets/images/icon_new_withoutBackground.png"}
             width={40}
             height={40}
-            alt=""
+            alt="Streamyfin Logo"
           />
           <p className="font-bold text-2xl">Streamyfin</p>
         </div>
