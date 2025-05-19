@@ -12,7 +12,7 @@ export default function Home() {
             src={"/assets/images/icon_new_withoutBackground.png"}
             width={40}
             height={40}
-            alt=""
+            alt="Streamyfin Logo"
           />
           <p className="font-bold text-2xl">Streamyfin</p>
         </div>
@@ -23,7 +23,7 @@ export default function Home() {
                 src={"/assets/images/discord.png"}
                 width={100}
                 height={100}
-                alt=""
+                alt="Discord icon"
                 className="object-contain"
               />
             </Link>
@@ -34,7 +34,7 @@ export default function Home() {
                 src={"/assets/images/github.png"}
                 width={100}
                 height={100}
-                alt=""
+                alt="Github icon"
               />
             </Link>
           </div>
