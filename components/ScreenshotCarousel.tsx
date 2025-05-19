@@ -71,8 +71,8 @@ export function ScreenshotCarousel() {
       title: "Media",
       subtitle: (
         <span>
-          Watch or listen to any type of media you want, whether it's movies,
-          music, or Live-TV, all from your server in one app.
+          Watch any type of media you want, whether it's movies,
+          TV-shows, or Live-TV, all from your server in one app.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (6).png",
