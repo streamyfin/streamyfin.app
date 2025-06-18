@@ -109,6 +109,7 @@ export default function Home() {
               Contact Us
             </a>
           </div>
+          <p className="mt-4">Only play media you own. Piracy is strictly prohibited.</p>
         </div>
       </footer>
     </div>
