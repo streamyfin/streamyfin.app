@@ -111,6 +111,9 @@ export default function Home() {
           </div>
           <p className="mt-4">Only play media you own. Piracy is strictly prohibited.</p>
         </div>
+        <div className="container mx-auto text-center mt-4">
+          <a href="https://hexabyte.se/en/vps/?currency=eur" target="_blank">Sponsored VPS Hosting by Hexabyte Cloud</a>
+        </div>
       </footer>
     </div>
   );
