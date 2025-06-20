@@ -91,17 +91,18 @@ export default function Home() {
       </section>
       <footer className=" text-white py-16  mt-auto bg-[#9334E9]">
         <div className="container mx-auto text-center">
-          <p>&copy; 2025 Streamyfin. All rights reserved.</p>
-          <div className="flex justify-center space-x-4 mt-4">
+          <div className="flex justify-center items-center space-x-4 mt-4">
             <a
               href="https://github.com/streamyfin/streamyfin"
               className="hover:underline"
             >
               GitHub
             </a>
+            <span className="text-gray-300">·</span>
             <a href="https://discord.gg/aJvAYeycyY" className="hover:underline">
               Discord
             </a>
+            <span className="text-gray-300">·</span>
             <a
               href="mailto:fredrik.burmester@gmail.com?subject=Streamyfin"
               className="hover:underline"
@@ -112,7 +113,13 @@ export default function Home() {
           <p className="mt-4">Only play media you own. Piracy is strictly prohibited.</p>
         </div>
         <div className="container mx-auto text-center mt-4">
-          <a href="https://hexabyte.se/en/vps/?currency=eur" target="_blank">Sponsored VPS Hosting by Hexabyte Cloud</a>
+          <a
+            href="https://hexabyte.se/en/vps/?currency=eur"
+            target="_blank"
+            className="text-white"
+          >
+            Sponsored VPS Hosting by Hexabyte Cloud
+          </a>
         </div>
       </footer>
     </div>
