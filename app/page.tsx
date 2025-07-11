@@ -104,7 +104,7 @@ export default function Home() {
             </a>
             <span className="text-gray-300">·</span>
             <a
-              href="mailto:fredrik.burmester@gmail.com?subject=Streamyfin"
+              href="mailto:developer@streamyfin.app"
               className="hover:underline"
             >
               Contact Us
