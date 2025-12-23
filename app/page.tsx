@@ -1,11 +1,13 @@
 import { ScreenshotCarousel } from "@/components/ScreenshotCarousel";
 import { FeatureCarousel } from "@/components/FeatureCarousel";
+import SnowfallComponent from "@/components/Snowfall";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen w-screen">
+    <div className="flex flex-col min-h-screen w-screen relative">
+      <SnowfallComponent />
       <header className="flex flex-row justify-between items-center p-4 lg:p-8">
         <div className="flex flex-row items-center gap-2 lg:gap-4">
           <Image
