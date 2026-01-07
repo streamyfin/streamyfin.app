@@ -1,13 +1,17 @@
 import { ScreenshotCarousel } from "@/components/ScreenshotCarousel";
 import { FeatureCarousel } from "@/components/FeatureCarousel";
-//import SnowfallComponent from "@/components/Snowfall";
+import SnowfallComponent from "@/components/Snowfall";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  // Auto-enable snowfall during December for festive season
+  const currentMonth = new Date().getMonth();
+  const isDecember = currentMonth === 11; 
+  
   return (
     <div className="flex flex-col min-h-screen w-screen relative">
-      {/* <SnowfallComponent /> */} // snowfall for festive season
+      {isDecember && <SnowfallComponent />}
       <header className="flex flex-row justify-between items-center p-4 lg:p-8">
         <div className="flex flex-row items-center gap-2 lg:gap-4">
           <Image
