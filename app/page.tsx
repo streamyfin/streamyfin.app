@@ -133,7 +133,7 @@ export default function Home() {
             target="_blank"
             className="text-white"
           >
-            © {new Date().getFullYear()} Streamyfin | All rights reserved
+            © {new Date().getFullYear()} Streamyfin
           </a>
         </div>
       </footer>
