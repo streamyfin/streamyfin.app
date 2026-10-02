@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint ."
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
@@ -16,8 +16,8 @@
     "embla-carousel-react": "^8.3.0",
     "lucide-react": "^1.0.0",
     "next": "16.3.8",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^19",
+    "react-dom": "^19",
     "react-snowfall": "^2.4.0",
     "tailwind-merge": "^2.5.3",
     "tailwindcss-animate": "^1.0.7"
@@ -25,9 +25,9 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^24.0.0",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
     "eslint-config-next": "16.3.8",
     "postcss": "^8",
     "tailwindcss": "^4.3.3",
