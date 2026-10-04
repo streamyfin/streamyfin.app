@@ -1,7 +1,18 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":automergeStableNonMajor"
   ],
-  "npmrc": "allow-remote=all"
+  "npmrc": "allow-remote=all",
+  "automergeStrategy": "squash",
+  "platformAutomerge": false,
+  "packageRules": [
+    {
+      "description": "Wait before automerging, so broken or compromised releases are usually pulled first",
+      "matchUpdateTypes": ["minor", "patch"],
+      "matchCurrentVersion": "!/^0/",
+      "minimumReleaseAge": "3 days"
+    }
+  ]
 }
