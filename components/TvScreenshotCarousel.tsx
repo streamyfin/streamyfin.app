@@ -38,6 +38,9 @@ export function TvScreenshotCarousel() {
                   width={2150}
                   height={1390}
                   sizes="(min-width: 1280px) 896px, 70vw"
+                  // The first slide is visible right away at the top of the
+                  // page, so load it immediately. The others can stay lazy.
+                  loading={index === 0 ? "eager" : "lazy"}
                   className="h-auto w-full object-contain"
                 />
                 <h3 className="mt-3 text-lg font-semibold">
