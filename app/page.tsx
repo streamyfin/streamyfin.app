@@ -1,8 +1,8 @@
 import { ScreenshotCarousel } from "@/components/ScreenshotCarousel";
 import { FeatureCarousel } from "@/components/FeatureCarousel";
 import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
 import { AppleTvSection } from "@/components/AppleTvSection";
+import { DownloadSection } from "@/components/DownloadSection";
 import { Footer } from "@/components/Footer";
 import SnowfallComponent from "@/components/Snowfall";
 
@@ -15,7 +15,6 @@ export default function Home() {
     <div className="flex flex-col min-h-screen w-full overflow-x-hidden relative">
       {isDecember && <SnowfallComponent />}
       <Header />
-      <Hero />
       <AppleTvSection />
 
       <section className="flex flex-col items-center px-4 py-16 text-center">
@@ -28,7 +27,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center px-4 py-16 mb-8 text-center">
+      <section className="flex flex-col items-center px-4 py-16 text-center">
         <h2 className="text-3xl font-bold lg:text-4xl">
           Companion plugin for Streamyfin
         </h2>
@@ -43,6 +42,7 @@ export default function Home() {
         </div>
       </section>
 
+      <DownloadSection />
       <Footer />
     </div>
   );

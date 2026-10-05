@@ -11,7 +11,7 @@ export function Header() {
           height={40}
           alt="Streamyfin Logo"
         />
-        <p className="font-bold text-2xl">Streamyfin</p>
+        <h1 className="font-bold text-2xl">Streamyfin</h1>
       </div>
       <div className="flex flex-row gap-4 lg:gap-8 items-center">
         <div className="h-6 lg:h-8 aspect-square flex items-center justify-center">

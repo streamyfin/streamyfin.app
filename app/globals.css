@@ -68,7 +68,7 @@
 
 @layer base {
   html {
-    /* Smooth scrolling for in-page links like the "Now on Apple TV" badge */
+    /* Smooth scrolling for in-page links like streamyfin.app/#apple-tv */
     scroll-behavior: smooth;
   }
   body {
