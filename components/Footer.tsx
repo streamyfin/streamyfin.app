@@ -52,7 +52,7 @@ export function Footer() {
         {/* Easter egg: hover (or press) to make the wheels spin */}
         <div className="mt-4">
           <a
-            href="https://github.com/retardgerman"
+            href="https://github.com/streamyfin/streamyfin.app"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-1.5 hover:text-white transition-colors"
