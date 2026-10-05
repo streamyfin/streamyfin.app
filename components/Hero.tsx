@@ -1,36 +1,24 @@
 import Image from "next/image";
-import { ArrowDown, Tv } from "lucide-react";
 
 const platforms = ["iPhone", "iPad", "Apple TV", "Android"];
 
 export function Hero() {
   return (
-    <section className="relative isolate flex flex-col items-center px-4 pt-12 pb-20 lg:pt-20 lg:pb-28 text-center">
-      {/* Soft purple glow behind the headline. Purely decorative. */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-0 -z-10 h-105 w-[min(900px,100vw)] -translate-x-1/2 rounded-full bg-primary/25 blur-[120px]"
-      />
-
-      <a
-        href="#apple-tv"
-        className="group inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-sm font-medium text-purple-200 transition-colors hover:bg-primary/20"
-      >
-        <Tv className="h-4 w-4" aria-hidden="true" />
-        New: Now available on Apple TV
-        <ArrowDown
-          className="h-4 w-4 transition-transform group-hover:translate-y-0.5"
-          aria-hidden="true"
-        />
-      </a>
-
-      <h1 className="mt-8 text-5xl font-bold tracking-tight lg:text-7xl">
+    <section className="flex flex-col items-center px-4 pt-16 pb-20 lg:pt-24 lg:pb-28 text-center">
+      <h1 className="text-5xl font-bold tracking-tight lg:text-7xl">
         Streamyfin
       </h1>
       <p className="mt-6 max-w-2xl text-lg text-gray-300 text-balance lg:text-xl">
         A modern Jellyfin client with support for downloads, Live TV, skip
         intro & credits, trickplay images and more!
       </p>
+      {/* Jumps to the Apple TV section further down */}
+      <a
+        href="#apple-tv"
+        className="mt-4 text-lg font-medium underline decoration-primary underline-offset-4 hover:text-primary transition-colors"
+      >
+        Now also on Apple TV →
+      </a>
 
       <div className="mt-10 flex flex-row flex-wrap justify-center gap-4">
         <a
