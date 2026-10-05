@@ -1,3 +1,5 @@
+import { WheelchairIcon } from "@/components/WheelchairIcon";
+
 export function Footer() {
   return (
     <footer className="mt-auto border-t border-white/10 bg-white/2 py-12 text-sm text-gray-400">
@@ -45,6 +47,19 @@ export function Footer() {
             className="hover:text-white transition-colors"
           >
             © {new Date().getFullYear()} Streamyfin
+          </a>
+        </div>
+        {/* Easter egg: hover (or press) to make the wheels spin */}
+        <div className="mt-4">
+          <a
+            href="https://github.com/retardgerman"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-1.5 hover:text-white transition-colors"
+          >
+            Built with ❤️ by
+            <WheelchairIcon className="h-5 w-5" />
+            <span className="sr-only">Jan</span>
           </a>
         </div>
       </div>
