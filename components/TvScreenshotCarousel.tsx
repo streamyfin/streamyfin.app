@@ -11,14 +11,49 @@ import {
 // Screenshots already include the TV frame (exported from the mockup),
 // just like the iPhone screenshots. Add new ones to
 // public/assets/screenshots/Screenshots_new/AppleTV/ and list them here.
-const tvScreenshots: { title: string; link: string }[] = [
-  { title: "Home", link: "/assets/screenshots/Screenshots_new/AppleTV/01-home.png" },
-  { title: "Resume Playback", link: "/assets/screenshots/Screenshots_new/AppleTV/02-resume-playback.png" },
-  { title: "Search", link: "/assets/screenshots/Screenshots_new/AppleTV/03-search.png" },
-  { title: "Series Details", link: "/assets/screenshots/Screenshots_new/AppleTV/04-series-detail.png" },
-  { title: "Player", link: "/assets/screenshots/Screenshots_new/AppleTV/05-player.png" },
-  { title: "Libraries", link: "/assets/screenshots/Screenshots_new/AppleTV/06-library.png" },
-  { title: "Movies", link: "/assets/screenshots/Screenshots_new/AppleTV/07-movies.png" },
+const tvScreenshots: { title: string; subtitle: string; link: string }[] = [
+  {
+    title: "Home",
+    subtitle:
+      "Continue watching, next up and recently added items, right on your home screen.",
+    link: "/assets/screenshots/Screenshots_new/AppleTV/01-home.png",
+  },
+  {
+    title: "Resume Playback",
+    subtitle:
+      "Pick up exactly where you left off, or start again from the beginning.",
+    link: "/assets/screenshots/Screenshots_new/AppleTV/02-resume-playback.png",
+  },
+  {
+    title: "Search",
+    subtitle:
+      "Search your whole library with the remote, with results split into movies and series.",
+    link: "/assets/screenshots/Screenshots_new/AppleTV/03-search.png",
+  },
+  {
+    title: "Series Details",
+    subtitle:
+      "Ratings, genres, seasons and episodes at a glance, with one click to continue.",
+    link: "/assets/screenshots/Screenshots_new/AppleTV/04-series-detail.png",
+  },
+  {
+    title: "Player",
+    subtitle:
+      "A clean player with subtitles, audio options and the time your episode ends.",
+    link: "/assets/screenshots/Screenshots_new/AppleTV/05-player.png",
+  },
+  {
+    title: "Libraries",
+    subtitle:
+      "All your libraries in one place: movies, TV shows, collections and playlists.",
+    link: "/assets/screenshots/Screenshots_new/AppleTV/06-library.png",
+  },
+  {
+    title: "Movies",
+    subtitle:
+      "Browse your movies and filter by genre, year or tag, sorted the way you like.",
+    link: "/assets/screenshots/Screenshots_new/AppleTV/07-movies.png",
+  },
 ];
 
 export function TvScreenshotCarousel() {
@@ -46,6 +81,9 @@ export function TvScreenshotCarousel() {
                 <h3 className="mt-3 text-lg font-semibold">
                   {screenshot.title}
                 </h3>
+                <p className="mt-1 max-w-xl text-sm text-gray-400">
+                  {screenshot.subtitle}
+                </p>
               </div>
             </CarouselItem>
           ))}
