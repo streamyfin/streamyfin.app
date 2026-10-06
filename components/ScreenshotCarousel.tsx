@@ -71,7 +71,7 @@ export function ScreenshotCarousel() {
       title: "Media",
       subtitle: (
         <span>
-          Watch any type of media you want, whether it's movies,
+          Watch any type of media you want, whether it’s movies,
           TV-shows, or Live-TV, all from your server in one app.
         </span>
       ),
@@ -101,7 +101,7 @@ export function ScreenshotCarousel() {
       subtitle: (
         <span>
           Customize how you watch your content—change stream quality, audio, and
-          subtitles, whether it's 100Mbps or 100Kbps.
+          subtitles, whether it’s 100Mbps or 100Kbps.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (9).png",
@@ -111,7 +111,7 @@ export function ScreenshotCarousel() {
       subtitle: (
         <span>
           Full support for Chromecast streaming on both Android and iOS, for
-          when the mobile screen isn't enough.
+          when the mobile screen isn’t enough.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (10).png",
