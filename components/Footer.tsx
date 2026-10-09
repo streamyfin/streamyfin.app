@@ -13,7 +13,7 @@ export function Footer() {
           </a>
           <span className="text-gray-600">·</span>
           <a
-            href="https://discord.gg/aJvAYeycyY"
+            href="https://discord.streamyfin.app"
             className="hover:text-white transition-colors"
           >
             Discord
@@ -29,16 +29,26 @@ export function Footer() {
         <p className="mt-6">
           Only play media you own. Piracy is strictly prohibited.
         </p>
-        <div className="mt-4">
+        <p className="mt-4">
+          VPS hosting sponsored by{" "}
           <a
             href="https://hexabyte.se/en/vps/?currency=eur"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
           >
-            Sponsored VPS Hosting by Hexabyte Cloud
+            Hexabyte
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://swehosting.se/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            SweHosting
           </a>
-        </div>
+        </p>
         <div className="mt-4">
           <a
             href="https://github.com/streamyfin"

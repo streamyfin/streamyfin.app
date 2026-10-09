@@ -11,7 +11,7 @@ import {
 const features = [
   {
     title: "Automatic Login",
-    subtitle: "Automatically log in users into Jellyseerr",
+    subtitle: "Automatically sign your users in to Seerr",
     link: "/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr_2.PNG"
   },
   {

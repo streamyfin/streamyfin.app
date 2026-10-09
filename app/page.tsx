@@ -32,10 +32,18 @@ export default function Home() {
           Companion plugin for Streamyfin
         </h2>
         <p className="mt-4 max-w-2xl text-gray-400">
-          Allows for a centralised configuration of the Streamyfin application.
-          Configure and synchronize the apps settings or notifications! With
-          this plugin you allow the streamyfin application to do the following
-          for all your users...
+          Install the{" "}
+          <a
+            href="https://github.com/streamyfin/jellyfin-plugin-streamyfin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            Streamyfin plugin
+          </a>{" "}
+          on your Jellyfin server to manage the app&apos;s settings for all
+          your users in one place and send them push notifications. For
+          example:
         </p>
         <div className="mt-10">
           <FeatureCarousel />

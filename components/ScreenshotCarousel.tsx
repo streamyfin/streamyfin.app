@@ -15,17 +15,17 @@ export function ScreenshotCarousel() {
       title: "Overview",
       subtitle: (
         <span>
-          See your next-up Episodes, continue watching, and recently added items. With support
-          for {" "}
+          See your next up episodes, continue watching and recently added
+          items. Works with the{" "}
           <Link
             href="https://github.com/lostb1t/jellyfin-plugin-collection-import"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 underline"
           >
-            collections import plugin
+            collection import plugin
           </Link>{" "}
-          for easy importing of external collections.
+          to bring in collections from other sources.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (5).png",
@@ -34,7 +34,7 @@ export function ScreenshotCarousel() {
       title: "Search",
       subtitle: (
         <span>
-          Search for anything - with support for{" "}
+          Search for anything, with support for{" "}
           <Link
             href="https://gitlab.com/DomiStyle/jellysearch"
             target="_blank"
@@ -50,9 +50,9 @@ export function ScreenshotCarousel() {
             rel="noopener noreferrer"
             className="text-gray-400 underline"
           >
-            MarlinSearch
+            Marlin Search
           </Link>{" "}
-          for an effortless searching experience.
+          for faster, smarter results.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (1).png",
@@ -61,8 +61,8 @@ export function ScreenshotCarousel() {
       title: "Libraries",
       subtitle: (
         <span>
-          View all your libraries with every type of filter you could wish for
-          to find the exact type of movie you want at that moment.
+          Browse all your libraries with every filter you could wish for, to
+          find exactly the movie you are in the mood for.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (2).png",
@@ -71,8 +71,8 @@ export function ScreenshotCarousel() {
       title: "Media",
       subtitle: (
         <span>
-          Watch any type of media you want, whether it’s movies,
-          TV-shows, or Live-TV, all from your server in one app.
+          Movies, TV shows or Live TV: watch everything from your server in
+          one app.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (6).png",
@@ -81,17 +81,9 @@ export function ScreenshotCarousel() {
       title: "Download",
       subtitle: (
         <span>
-          Download support inside the app with transcoded downloads and
-          background downloads, using the{" "}
-          <Link
-            href="https://github.com/streamyfin/optimized-versions-server"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            optimized server
-          </Link>
-          .
+          Save movies and episodes to watch offline. Your Jellyfin server
+          converts them on the fly, so anything you can stream, you can
+          download.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (8).png",
@@ -100,8 +92,8 @@ export function ScreenshotCarousel() {
       title: "Streaming Options",
       subtitle: (
         <span>
-          Customize how you watch your content—change stream quality, audio, and
-          subtitles, whether it’s 100Mbps or 100Kbps.
+          Choose stream quality, audio and subtitles, whether you have 100
+          Mbps or 100 Kbps.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (9).png",
@@ -110,8 +102,8 @@ export function ScreenshotCarousel() {
       title: "Chromecast",
       subtitle: (
         <span>
-          Full support for Chromecast streaming on both Android and iOS, for
-          when the mobile screen isn’t enough.
+          Cast to any Chromecast device from Android and iOS, for when the
+          phone screen isn’t enough.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (10).png",
@@ -120,16 +112,16 @@ export function ScreenshotCarousel() {
       title: "Extended controls",
       subtitle: (
         <span>
-          Extended video controls inside the video player, including integrated{" "}
+          Extended controls in the video player, including{" "}
           <Link
             href="https://github.com/intro-skipper/intro-skipper"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-400 underline"
           >
-            intro-skipper
+            Intro Skipper
           </Link>{" "}
-          support so you can skip intros/credits during your latest binge.
+          support to skip intros and credits during your latest binge.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (11).png",
@@ -138,14 +130,17 @@ export function ScreenshotCarousel() {
       title: "Request Media",
       subtitle: (
         <span>
-          Request content directly in the app with {" "}
-          <Link href="https://github.com/Fallenbagel/jellyseerr" 
-          target="_blank" rel="noopener noreferrer" 
-          className="text-gray-400 underline"
+          Discover, request and track new movies and shows right in the app,
+          thanks to the{" "}
+          <Link
+            href="https://github.com/seerr-team/seerr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 underline"
           >
-            Jellyseerr
-          </Link>{" "} 
-          integration. Discover, request, and track media with ease.
+            Seerr
+          </Link>{" "}
+          integration (formerly Jellyseerr).
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr.png",
@@ -154,7 +149,8 @@ export function ScreenshotCarousel() {
       title: "Session View",
       subtitle: (
         <span>
-          As an server admin, you can view the sessions of your users in the app, including informations about Codec, device and playback method.
+          As a server admin, see who is watching what, including codec,
+          device and playback method.
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/session_view.png",
@@ -163,7 +159,17 @@ export function ScreenshotCarousel() {
       title: "Multi-language Support",
       subtitle: (
         <span>
-          Support for multiple languages, including German, Spanish, French, and Swedish, with more languages coming.
+          Available in more than 30 languages, translated by the community
+          on{" "}
+          <Link
+            href="https://crowdin.com/project/streamyfin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 underline"
+          >
+            Crowdin
+          </Link>
+          .
         </span>
       ),
       link: "/assets/screenshots/Screenshots_new/Iphone/Black/localization screenshot.png",
