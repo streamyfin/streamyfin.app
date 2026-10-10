@@ -16,7 +16,15 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Streamyfin",
-  description: "A modern Jellyfin client with support for downloads, Live TV, skip intro & credits, trickplay image and more!",
+  description: "A modern Jellyfin client for iPhone, iPad, Apple TV and Android with support for downloads, Live TV, skip intro & credits, trickplay images and more!",
+  // Used for link previews (Discord, iMessage, social media)
+  openGraph: {
+    title: "Streamyfin: now on Apple TV",
+    description: "A modern Jellyfin client for iPhone, iPad, Apple TV and Android.",
+    url: "https://streamyfin.app",
+    siteName: "Streamyfin",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

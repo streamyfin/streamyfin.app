@@ -11,7 +11,7 @@ import {
 const features = [
   {
     title: "Automatic Login",
-    subtitle: "Automatically log in users into Jellyseerr",
+    subtitle: "Automatically sign your users in to Seerr",
     link: "/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr_2.PNG"
   },
   {
@@ -41,7 +41,7 @@ export function FeatureCarousel() {
               className="md:basis-1/2 lg:basis-1/3"
               aria-label={`Feature ${index + 1} of ${features.length}`}
               >
-              <div className="grid grid-rows-[auto_1fr_auto] h-full w-full items-center justify-between text-center">
+              <div className="grid grid-cols-1 grid-rows-[auto_1fr_auto] h-full w-full items-center text-center">
                 <div className="h-full w-full flex flex-col items-center justify-center">
                   <Image
                     src={feature.link}

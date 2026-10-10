@@ -1,6 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
-import Link from "next/link"; // Import Link from Next.js
+import Link from "next/link";
 import {
   Carousel,
   CarouselContent,
@@ -9,193 +9,123 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export function ScreenshotCarousel() {
-  const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
-    {
-      title: "Overview",
-      subtitle: (
-        <span>
-          See your next-up Episodes, continue watching, and recently added items. With support
-          for {" "}
-          <Link
-            href="https://github.com/lostb1t/jellyfin-plugin-collection-import"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            collections import plugin
-          </Link>{" "}
-          for easy importing of external collections.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (5).png",
-    },
-    {
-      title: "Search",
-      subtitle: (
-        <span>
-          Search for anything - with support for{" "}
-          <Link
-            href="https://gitlab.com/DomiStyle/jellysearch"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            JellySearch
-          </Link>{" "}
-          and{" "}
-          <Link
-            href="https://github.com/fredrikburmester/marlin-search"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            MarlinSearch
-          </Link>{" "}
-          for an effortless searching experience.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (1).png",
-    },
-    {
-      title: "Libraries",
-      subtitle: (
-        <span>
-          View all your libraries with every type of filter you could wish for
-          to find the exact type of movie you want at that moment.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (2).png",
-    },
-    {
-      title: "Media",
-      subtitle: (
-        <span>
-          Watch any type of media you want, whether it's movies,
-          TV-shows, or Live-TV, all from your server in one app.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (6).png",
-    },
-    {
-      title: "Download",
-      subtitle: (
-        <span>
-          Download support inside the app with transcoded downloads and
-          background downloads, using the{" "}
-          <Link
-            href="https://github.com/streamyfin/optimized-versions-server"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            optimized server
-          </Link>
-          .
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (8).png",
-    },
-    {
-      title: "Streaming Options",
-      subtitle: (
-        <span>
-          Customize how you watch your content—change stream quality, audio, and
-          subtitles, whether it's 100Mbps or 100Kbps.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (9).png",
-    },
-    {
-      title: "Chromecast",
-      subtitle: (
-        <span>
-          Full support for Chromecast streaming on both Android and iOS, for
-          when the mobile screen isn't enough.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (10).png",
-    },
-    {
-      title: "Extended controls",
-      subtitle: (
-        <span>
-          Extended video controls inside the video player, including integrated{" "}
-          <Link
-            href="https://github.com/intro-skipper/intro-skipper"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            intro-skipper
-          </Link>{" "}
-          support so you can skip intros/credits during your latest binge.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (11).png",
-    },
-    {
-      title: "Request Media",
-      subtitle: (
-        <span>
-          Request content directly in the app with {" "}
-          <Link href="https://github.com/Fallenbagel/jellyseerr" 
-          target="_blank" rel="noopener noreferrer" 
-          className="text-gray-400 underline"
-          >
-            Jellyseerr
-          </Link>{" "} 
-          integration. Discover, request, and track media with ease.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr.png",
-    },
-    {
-      title: "Session View",
-      subtitle: (
-        <span>
-          As an server admin, you can view the sessions of your users in the app, including informations about Codec, device and playback method.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/session_view.png",
-    },
-    {
-      title: "Multi-language Support",
-      subtitle: (
-        <span>
-          Support for multiple languages, including German, Spanish, French, and Swedish, with more languages coming.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/localization screenshot.png",
-    }
-  ];
+// Screenshots already include the iPhone 17 Pro frame (exported from the
+// mockup). Add new ones to public/assets/screenshots/Screenshots_new/Iphone/2026/
+// and list them here.
+const screenshotDir = "/assets/screenshots/Screenshots_new/Iphone/2026";
 
+function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 underline"
+    >
+      {children}
+    </Link>
+  );
+}
+
+const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
+  {
+    title: "Home",
+    subtitle: (
+      <span>
+        A big carousel with your latest additions, followed by continue
+        watching and next up. Downloads and Chromecast are one tap away.
+      </span>
+    ),
+    link: `${screenshotDir}/01-home.png`,
+  },
+  {
+    title: "Libraries",
+    subtitle: (
+      <span>
+        All your libraries at a glance, from movies and series to collections
+        and playlists.
+      </span>
+    ),
+    link: `${screenshotDir}/02-library.png`,
+  },
+  {
+    title: "Media Details",
+    subtitle: (
+      <span>
+        Ratings and awards, video details like resolution, HDR and bitrate,
+        and quick buttons to cast, download, mark as watched or favorite.
+      </span>
+    ),
+    link: `${screenshotDir}/03-media-details.png`,
+  },
+  {
+    title: "Playback Settings",
+    subtitle: (
+      <span>
+        Set your skip lengths and gestures: swipe for brightness, volume or
+        to skip, hold to speed up, pinch to zoom.
+      </span>
+    ),
+    link: `${screenshotDir}/04-playback-settings.png`,
+  },
+  {
+    title: "Search & Discover",
+    subtitle: (
+      <span>
+        Find anything in your library, with support for{" "}
+        <ExternalLink href="https://gitlab.com/DomiStyle/jellysearch">
+          JellySearch
+        </ExternalLink>{" "}
+        and{" "}
+        <ExternalLink href="https://github.com/fredrikburmester/marlin-search">
+          Marlin Search
+        </ExternalLink>
+        , and discover trending titles from{" "}
+        <ExternalLink href="https://github.com/seerr-team/seerr">
+          Seerr
+        </ExternalLink>
+        .
+      </span>
+    ),
+    link: `${screenshotDir}/05-search.png`,
+  },
+  {
+    title: "Request Media",
+    subtitle: (
+      <span>
+        Ratings, genres and release dates at a glance, and one tap to request
+        what you want to watch next.
+      </span>
+    ),
+    link: `${screenshotDir}/06-request-media.png`,
+  },
+];
+
+export function ScreenshotCarousel() {
   return (
     <div className="w-[70vw] 2xl:w-[50vw]">
-      <Carousel className="" opts={{ loop: true }}>
+      <Carousel opts={{ loop: true }} aria-label="iPhone screenshots">
         <CarouselContent>
           {images.map((image, index) => (
-            <CarouselItem 
-              key={index} 
+            <CarouselItem
+              key={index}
               className="md:basis-1/2 lg:basis-1/3"
               aria-label={`Feature ${index + 1} of ${images.length}`}
-              >
-              <div className="grid grid-rows-[auto_1fr_1fr] h-full w-full items-center justify-between text-center">
-                <div className="h-full w-full flex flex-col items-center justify-center grow object-contain">
+            >
+              <div className="flex h-full flex-col items-center text-center">
+                {/* Every image gets the same portrait box, so the titles always
+                    line up and the layout doesn't jump while images load */}
+                <div className="relative aspect-684/1400 w-full">
                   <Image
                     src={image.link}
-                    alt={`Screenshot showing Feature ${image.title}`}
-                    width={300}
-                    height={300}
-                    className="h-full w-auto object-contain"
+                    alt={`iPhone screenshot: ${image.title}`}
+                    fill
+                    sizes="(min-width: 1536px) 16vw, (min-width: 1024px) 23vw, (min-width: 768px) 35vw, 70vw"
+                    className="object-contain"
                   />
                 </div>
-                <h3 className="mt-2 text-lg font-semibold" id={`feature-title-${index}`}>
-                  {image.title}
-                  </h3>
-                <p className="text-sm text-gray-400" id={`feature-desc-${index}`}>
-                  {image.subtitle}
-                </p>
+                <h3 className="mt-4 text-lg font-semibold">{image.title}</h3>
+                <p className="mt-1 text-sm text-gray-400">{image.subtitle}</p>
               </div>
             </CarouselItem>
           ))}
