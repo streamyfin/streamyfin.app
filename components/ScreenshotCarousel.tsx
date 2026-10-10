@@ -59,24 +59,14 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
     link: `${screenshotDir}/03-media-details.png`,
   },
   {
-    title: "Player",
-    subtitle: (
-      <span>
-        Swipe for brightness and volume, skip with one tap, use
-        picture-in-picture, and see when your movie ends.
-      </span>
-    ),
-    link: `${screenshotDir}/04-player.png`,
-  },
-  {
     title: "Playback Settings",
     subtitle: (
       <span>
-        Set your skip lengths and gestures: swipe to skip, hold to speed up,
-        pinch to zoom.
+        Set your skip lengths and gestures: swipe for brightness, volume or
+        to skip, hold to speed up, pinch to zoom.
       </span>
     ),
-    link: `${screenshotDir}/05-playback-settings.png`,
+    link: `${screenshotDir}/04-playback-settings.png`,
   },
   {
     title: "Search & Discover",
@@ -97,7 +87,7 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
         .
       </span>
     ),
-    link: `${screenshotDir}/06-search.png`,
+    link: `${screenshotDir}/05-search.png`,
   },
   {
     title: "Request Media",
@@ -107,27 +97,7 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
         what you want to watch next.
       </span>
     ),
-    link: `${screenshotDir}/07-request-media.png`,
-  },
-  {
-    title: "Appearance",
-    subtitle: (
-      <span>
-        Make the app yours: hero carousel, merged rows, episode thumbnails,
-        hidden libraries and download progress in the Dynamic Island.
-      </span>
-    ),
-    link: `${screenshotDir}/08-appearance.png`,
-  },
-  {
-    title: "Plugins",
-    subtitle: (
-      <span>
-        Works with Seerr, Streamystats, Marlin Search and KefinTweaks, plus
-        awards from Wikidata and subtitles from OpenSubtitles.
-      </span>
-    ),
-    link: `${screenshotDir}/09-plugins.png`,
+    link: `${screenshotDir}/06-request-media.png`,
   },
 ];
 
@@ -143,8 +113,8 @@ export function ScreenshotCarousel() {
               aria-label={`Feature ${index + 1} of ${images.length}`}
             >
               <div className="flex h-full flex-col items-center text-center">
-                {/* Every image gets the same portrait box, so the titles line up
-                    even for the landscape player screenshot */}
+                {/* Every image gets the same portrait box, so the titles always
+                    line up and the layout doesn't jump while images load */}
                 <div className="relative aspect-684/1400 w-full">
                   <Image
                     src={image.link}
