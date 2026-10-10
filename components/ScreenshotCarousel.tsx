@@ -49,6 +49,16 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
     link: `${screenshotDir}/02-library.png`,
   },
   {
+    title: "Media Details",
+    subtitle: (
+      <span>
+        Ratings and awards, video details like resolution, HDR and bitrate,
+        and quick buttons to cast, download, mark as watched or favorite.
+      </span>
+    ),
+    link: `${screenshotDir}/03-media-details.png`,
+  },
+  {
     title: "Player",
     subtitle: (
       <span>
@@ -56,7 +66,7 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
         picture-in-picture, and see when your movie ends.
       </span>
     ),
-    link: `${screenshotDir}/03-player.png`,
+    link: `${screenshotDir}/04-player.png`,
   },
   {
     title: "Playback Settings",
@@ -66,7 +76,7 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
         pinch to zoom.
       </span>
     ),
-    link: `${screenshotDir}/04-playback-settings.png`,
+    link: `${screenshotDir}/05-playback-settings.png`,
   },
   {
     title: "Search & Discover",
@@ -87,7 +97,7 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
         .
       </span>
     ),
-    link: `${screenshotDir}/05-search.png`,
+    link: `${screenshotDir}/06-search.png`,
   },
   {
     title: "Request Media",
@@ -97,7 +107,7 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
         what you want to watch next.
       </span>
     ),
-    link: `${screenshotDir}/06-request-media.png`,
+    link: `${screenshotDir}/07-request-media.png`,
   },
   {
     title: "Appearance",
@@ -107,7 +117,7 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
         hidden libraries and download progress in the Dynamic Island.
       </span>
     ),
-    link: `${screenshotDir}/07-appearance.png`,
+    link: `${screenshotDir}/08-appearance.png`,
   },
   {
     title: "Plugins",
@@ -117,7 +127,7 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
         awards from Wikidata and subtitles from OpenSubtitles.
       </span>
     ),
-    link: `${screenshotDir}/08-plugins.png`,
+    link: `${screenshotDir}/09-plugins.png`,
   },
 ];
 
