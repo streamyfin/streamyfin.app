@@ -186,7 +186,7 @@ export function ScreenshotCarousel() {
               className="md:basis-1/2 lg:basis-1/3"
               aria-label={`Feature ${index + 1} of ${images.length}`}
               >
-              <div className="grid grid-rows-[auto_1fr_1fr] h-full w-full items-center justify-between text-center">
+              <div className="grid grid-cols-1 grid-rows-[auto_1fr_1fr] h-full w-full items-center text-center">
                 <div className="h-full w-full flex flex-col items-center justify-center grow object-contain">
                   <Image
                     src={image.link}
