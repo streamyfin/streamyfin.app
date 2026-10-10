@@ -1,6 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
-import Link from "next/link"; // Import Link from Next.js
+import Link from "next/link";
 import {
   Carousel,
   CarouselContent,
@@ -9,199 +9,143 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export function ScreenshotCarousel() {
-  const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
-    {
-      title: "Overview",
-      subtitle: (
-        <span>
-          See your next up episodes, continue watching and recently added
-          items. Works with the{" "}
-          <Link
-            href="https://github.com/lostb1t/jellyfin-plugin-collection-import"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            collection import plugin
-          </Link>{" "}
-          to bring in collections from other sources.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (5).png",
-    },
-    {
-      title: "Search",
-      subtitle: (
-        <span>
-          Search for anything, with support for{" "}
-          <Link
-            href="https://gitlab.com/DomiStyle/jellysearch"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            JellySearch
-          </Link>{" "}
-          and{" "}
-          <Link
-            href="https://github.com/fredrikburmester/marlin-search"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            Marlin Search
-          </Link>{" "}
-          for faster, smarter results.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (1).png",
-    },
-    {
-      title: "Libraries",
-      subtitle: (
-        <span>
-          Browse all your libraries with every filter you could wish for, to
-          find exactly the movie you are in the mood for.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (2).png",
-    },
-    {
-      title: "Media",
-      subtitle: (
-        <span>
-          Movies, TV shows or Live TV: watch everything from your server in
-          one app.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (6).png",
-    },
-    {
-      title: "Download",
-      subtitle: (
-        <span>
-          Save movies and episodes to watch offline. Your Jellyfin server
-          converts them on the fly, so anything you can stream, you can
-          download.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (8).png",
-    },
-    {
-      title: "Streaming Options",
-      subtitle: (
-        <span>
-          Choose stream quality, audio and subtitles, whether you have 100
-          Mbps or 100 Kbps.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (9).png",
-    },
-    {
-      title: "Chromecast",
-      subtitle: (
-        <span>
-          Cast to any Chromecast device from Android and iOS, for when the
-          phone screen isn’t enough.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (10).png",
-    },
-    {
-      title: "Extended controls",
-      subtitle: (
-        <span>
-          Extended controls in the video player, including{" "}
-          <Link
-            href="https://github.com/intro-skipper/intro-skipper"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            Intro Skipper
-          </Link>{" "}
-          support to skip intros and credits during your latest binge.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/streamyfin_black (11).png",
-    },
-    {
-      title: "Request Media",
-      subtitle: (
-        <span>
-          Discover, request and track new movies and shows right in the app,
-          thanks to the{" "}
-          <Link
-            href="https://github.com/seerr-team/seerr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            Seerr
-          </Link>{" "}
-          integration (formerly Jellyseerr).
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/jellyseerr.png",
-    },
-    {
-      title: "Session View",
-      subtitle: (
-        <span>
-          As a server admin, see who is watching what, including codec,
-          device and playback method.
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/session_view.png",
-    },
-    {
-      title: "Multi-language Support",
-      subtitle: (
-        <span>
-          Available in more than 30 languages, translated by the community
-          on{" "}
-          <Link
-            href="https://crowdin.com/project/streamyfin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 underline"
-          >
-            Crowdin
-          </Link>
-          .
-        </span>
-      ),
-      link: "/assets/screenshots/Screenshots_new/Iphone/Black/localization screenshot.png",
-    }
-  ];
+// Screenshots already include the iPhone 17 Pro frame (exported from the
+// mockup). Add new ones to public/assets/screenshots/Screenshots_new/Iphone/2026/
+// and list them here.
+const screenshotDir = "/assets/screenshots/Screenshots_new/Iphone/2026";
 
+function ExternalLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-gray-400 underline"
+    >
+      {children}
+    </Link>
+  );
+}
+
+const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
+  {
+    title: "Home",
+    subtitle: (
+      <span>
+        A big carousel with your latest additions, followed by continue
+        watching and next up. Downloads and Chromecast are one tap away.
+      </span>
+    ),
+    link: `${screenshotDir}/01-home.png`,
+  },
+  {
+    title: "Libraries",
+    subtitle: (
+      <span>
+        All your libraries at a glance, from movies and series to collections
+        and playlists.
+      </span>
+    ),
+    link: `${screenshotDir}/02-library.png`,
+  },
+  {
+    title: "Player",
+    subtitle: (
+      <span>
+        Swipe for brightness and volume, skip with one tap, use
+        picture-in-picture, and see when your movie ends.
+      </span>
+    ),
+    link: `${screenshotDir}/03-player.png`,
+  },
+  {
+    title: "Playback Settings",
+    subtitle: (
+      <span>
+        Set your skip lengths and gestures: swipe to skip, hold to speed up,
+        pinch to zoom.
+      </span>
+    ),
+    link: `${screenshotDir}/04-playback-settings.png`,
+  },
+  {
+    title: "Search & Discover",
+    subtitle: (
+      <span>
+        Find anything in your library, with support for{" "}
+        <ExternalLink href="https://gitlab.com/DomiStyle/jellysearch">
+          JellySearch
+        </ExternalLink>{" "}
+        and{" "}
+        <ExternalLink href="https://github.com/fredrikburmester/marlin-search">
+          Marlin Search
+        </ExternalLink>
+        , and discover trending titles from{" "}
+        <ExternalLink href="https://github.com/seerr-team/seerr">
+          Seerr
+        </ExternalLink>
+        .
+      </span>
+    ),
+    link: `${screenshotDir}/05-search.png`,
+  },
+  {
+    title: "Request Media",
+    subtitle: (
+      <span>
+        Ratings, genres and release dates at a glance, and one tap to request
+        what you want to watch next.
+      </span>
+    ),
+    link: `${screenshotDir}/06-media-details.png`,
+  },
+  {
+    title: "Appearance",
+    subtitle: (
+      <span>
+        Make the app yours: hero carousel, merged rows, episode thumbnails,
+        hidden libraries and download progress in the Dynamic Island.
+      </span>
+    ),
+    link: `${screenshotDir}/07-appearance.png`,
+  },
+  {
+    title: "Plugins",
+    subtitle: (
+      <span>
+        Works with Seerr, Streamystats, Marlin Search and KefinTweaks, plus
+        awards from Wikidata and subtitles from OpenSubtitles.
+      </span>
+    ),
+    link: `${screenshotDir}/08-plugins.png`,
+  },
+];
+
+export function ScreenshotCarousel() {
   return (
     <div className="w-[70vw] 2xl:w-[50vw]">
-      <Carousel className="" opts={{ loop: true }}>
+      <Carousel opts={{ loop: true }} aria-label="iPhone screenshots">
         <CarouselContent>
           {images.map((image, index) => (
-            <CarouselItem 
-              key={index} 
+            <CarouselItem
+              key={index}
               className="md:basis-1/2 lg:basis-1/3"
               aria-label={`Feature ${index + 1} of ${images.length}`}
-              >
-              <div className="grid grid-cols-1 grid-rows-[auto_1fr_1fr] h-full w-full items-center text-center">
-                <div className="h-full w-full flex flex-col items-center justify-center grow object-contain">
+            >
+              <div className="flex h-full flex-col items-center text-center">
+                {/* Every image gets the same portrait box, so the titles line up
+                    even for the landscape player screenshot */}
+                <div className="relative aspect-684/1400 w-full">
                   <Image
                     src={image.link}
-                    alt={`Screenshot showing Feature ${image.title}`}
-                    width={300}
-                    height={300}
-                    className="h-full w-auto object-contain"
+                    alt={`iPhone screenshot: ${image.title}`}
+                    fill
+                    sizes="(min-width: 1536px) 16vw, (min-width: 1024px) 23vw, (min-width: 768px) 35vw, 70vw"
+                    className="object-contain"
                   />
                 </div>
-                <h3 className="mt-2 text-lg font-semibold" id={`feature-title-${index}`}>
-                  {image.title}
-                  </h3>
-                <p className="text-sm text-gray-400" id={`feature-desc-${index}`}>
-                  {image.subtitle}
-                </p>
+                <h3 className="mt-4 text-lg font-semibold">{image.title}</h3>
+                <p className="mt-1 text-sm text-gray-400">{image.subtitle}</p>
               </div>
             </CarouselItem>
           ))}
