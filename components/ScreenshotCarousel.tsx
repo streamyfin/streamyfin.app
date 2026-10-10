@@ -97,7 +97,7 @@ const images: { title: string; subtitle: React.ReactNode; link: string }[] = [
         what you want to watch next.
       </span>
     ),
-    link: `${screenshotDir}/06-media-details.png`,
+    link: `${screenshotDir}/06-request-media.png`,
   },
   {
     title: "Appearance",
