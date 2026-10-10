@@ -58,7 +58,9 @@ const tvScreenshots: { title: string; subtitle: string; link: string }[] = [
 
 export function TvScreenshotCarousel() {
   return (
-    <div className="w-[70vw] max-w-4xl">
+    // On phones the TV takes the full width (minus the page gutter), so the
+    // device stays at least 200px tall as Apple's marketing guidelines require
+    <div className="w-[calc(100vw-2rem)] max-w-4xl sm:w-[70vw]">
       <Carousel opts={{ loop: true }} aria-label="Apple TV screenshots">
         <CarouselContent>
           {tvScreenshots.map((screenshot, index) => (
@@ -72,7 +74,7 @@ export function TvScreenshotCarousel() {
                   alt={`Apple TV screenshot: ${screenshot.title}`}
                   width={2150}
                   height={1390}
-                  sizes="(min-width: 1280px) 896px, 70vw"
+                  sizes="(min-width: 1280px) 896px, (min-width: 640px) 70vw, 100vw"
                   // The first slide is visible right away at the top of the
                   // page, so load it immediately. The others can stay lazy.
                   loading={index === 0 ? "eager" : "lazy"}
@@ -88,8 +90,9 @@ export function TvScreenshotCarousel() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        {/* No room for arrows next to a full-width TV on phones; swipe instead */}
+        <CarouselPrevious className="hidden sm:inline-flex" />
+        <CarouselNext className="hidden sm:inline-flex" />
       </Carousel>
     </div>
   );
