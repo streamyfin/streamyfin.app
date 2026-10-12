@@ -6,6 +6,7 @@
   ],
   "npmrc": "allow-remote=all",
   "automergeStrategy": "squash",
+  "automergeType": "branch",
   "platformAutomerge": false,
   "packageRules": [
     {
