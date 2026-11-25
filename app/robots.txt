@@ -4,3 +4,5 @@ Allow: /
 # We had to put something behind a paywall.
 User-agent: Plex
 Disallow: /
+
+Sitemap: https://streamyfin.app/sitemap.xml
