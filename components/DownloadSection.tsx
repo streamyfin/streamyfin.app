@@ -37,6 +37,19 @@ export function DownloadSection() {
             className="h-12 w-auto"
           />
         </a>
+        <a
+          href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/streamyfin/streamyfin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/badges/obtainium-badge.png"
+            alt="Get it on Obtainium"
+            width={564}
+            height={168}
+            className="h-12 w-auto"
+          />
+        </a>
       </div>
 
       <p className="mt-6 text-sm text-gray-400">
