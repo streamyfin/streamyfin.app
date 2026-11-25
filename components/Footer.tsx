@@ -27,7 +27,7 @@ export function Footer() {
           </a>
         </div>
         <p className="mt-6">
-          Only play media you own. Piracy is strictly prohibited.
+          Only play media you own, piracy is strictly prohibited.
         </p>
         <p className="mt-4">
           VPS hosting sponsored by{" "}
