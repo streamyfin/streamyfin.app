@@ -1,0 +1,23 @@
+# Streamyfin - Security & Vulnerability Disclosure
+
+Contact: mailto:developer@streamyfin.app
+Expires: 2027-11-01T00:00:00Z
+Preferred-Languages: en
+Canonical: https://streamyfin.app/.well-known/security.txt
+
+# Security reports should include the affected component,
+# version, steps to reproduce and potential impact.
+#
+# Please keep security reports out of public GitHub issues,
+# Discord channels and Reddit until the issue has been addressed.
+#
+# Streamyfin is maintained by volunteers. We appreciate your
+# patience while we investigate and coordinate a fix.
+
+# Source repositories:
+# https://github.com/streamyfin/streamyfin
+# https://github.com/streamyfin/jellyfin-plugin-streamyfin
+# https://github.com/streamyfin/streamyfin.app
+
+# Thanks to those who take the time to report issues privately.
+# - The Streamyfin team
