@@ -1,0 +1,85 @@
+  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+
+      ▄████▄ ██████ █████▄ ██████ ▄████▄ ██▄ ▄██ ██  ██ ██████ ████ ██  ██
+      ██       ██   ██  ██ ██     ██  ██ ██▀█▀██ ██  ██ ██      ██  ███ ██
+       ▀▀▀█▄   ██   ████▀  █████  ██████ ██   ██  ▀██▀  █████   ██  ██▀███
+          ██   ██   ██ ▀█▄ ██     ██  ██ ██   ██   ██   ██      ██  ██ ▀██
+      ▀████▀   ██   ██  ██ ██████ ██  ██ ██   ██   ██   ██     ████ ██  ██
+
+                          Your Modern Jellyfin Client
+  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+  ───┤ PROJECT INFORMATION ├──────────────────────────────────────────────────
+
+     Project ........: Streamyfin
+     Development ....: Streamyfin contributors
+     Client .........: Jellyfin video streaming client
+     Built with .....: Expo
+     License ........: Mozilla Public License 2.0 (MPL-2.0)
+     Contact ........: developer@streamyfin.app
+
+  ───┤ SOURCE CODE ├──────────────────────────────────────────────────────────
+
+     Client
+     https://github.com/streamyfin/streamyfin
+
+     Companion plugin
+     https://github.com/streamyfin/jellyfin-plugin-streamyfin
+
+     Website
+     https://github.com/streamyfin/streamyfin.app
+
+  ───┤ COMMUNITY ├────────────────────────────────────────────────────────────
+
+     Website ........: https://streamyfin.app
+     GitHub .........: https://github.com/streamyfin
+     Discord ........: https://discord.streamyfin.app
+     Reddit .........: https://www.reddit.com/r/streamyfin/
+     Translations ...: https://translate.streamyfin.app
+
+     Issue tracker
+     https://github.com/streamyfin/streamyfin/issues
+
+  ───┤ WEBSITE INFORMATION ├──────────────────────────────────────────────────
+
+     Website author .: Jan
+     Language .......: English
+     Standards ......: HTML5 / CSS
+     Encoding .......: UTF-8
+     Framework ......: Next.js
+     Stack ..........: React / TypeScript / Tailwind CSS
+     Hosting ........: Vercel
+     Last update ....: 2026/11/25
+
+  ───┤ ACKNOWLEDGEMENTS ├─────────────────────────────────────────────────────
+
+     The Jellyfin team, our contributors, translators and testers.
+
+     Client contributors
+     https://github.com/streamyfin/streamyfin/graphs/contributors
+
+     Plugin contributors
+     https://github.com/streamyfin/jellyfin-plugin-streamyfin/graphs/contributors
+
+     Website contributors
+     https://github.com/streamyfin/streamyfin.app/graphs/contributors
+
+     VPS hosting sponsored by Hexabyte and SweHosting.
+
+  ───┤ SECURITY ├─────────────────────────────────────────────────────────────
+
+     Security contact
+     developer@streamyfin.app
+
+     Security policy
+     https://github.com/streamyfin/streamyfin/security/policy
+
+     Security advisories
+     https://github.com/streamyfin/streamyfin/security/advisories
+
+     Vulnerability disclosure
+     https://streamyfin.app/.well-known/security.txt
+
+  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+    [EOF]                                                     streamyfin.app
+  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
