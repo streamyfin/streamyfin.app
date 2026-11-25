@@ -42,8 +42,7 @@ export default function Home() {
             Streamyfin plugin
           </a>{" "}
           on your Jellyfin server to manage the app&apos;s settings for all
-          your users in one place and send them push notifications. For
-          example:
+          your users in one place and send them push notifications.
         </p>
         <div className="mt-10">
           <FeatureCarousel />
