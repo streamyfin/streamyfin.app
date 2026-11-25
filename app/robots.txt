@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# We had to put something behind a paywall.
+User-agent: Plex
+Disallow: /
