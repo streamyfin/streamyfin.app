@@ -38,7 +38,7 @@ export function DownloadSection() {
           />
         </a>
         <a
-          href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/streamyfin/streamyfin"
+          href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.fredrikburmester.streamyfin%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fstreamyfin%2Fstreamyfin%22%2C%22author%22%3A%22streamyfin%22%2C%22name%22%3A%22Streamyfin%22%7D"
           target="_blank"
           rel="noopener noreferrer"
         >
