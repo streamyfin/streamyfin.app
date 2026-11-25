@@ -8,22 +8,38 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 
+const title = "Streamyfin | Your Modern Jellyfin Client";
+
+const description =
+  "A free, open-source Jellyfin client for iPhone, iPad, Apple TV and Android, built and maintained by the community.";
+
 export const metadata: Metadata = {
-  title: "Streamyfin",
-  description: "A modern Jellyfin client for iPhone, iPad, Apple TV and Android with support for downloads, Live TV, skip intro & credits, trickplay images and more!",
-  // Used for link previews (Discord, iMessage, social media)
+  metadataBase: new URL("https://streamyfin.app"),
+  title,
+  description,
+  applicationName: "Streamyfin",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Streamyfin: now on Apple TV",
-    description: "A modern Jellyfin client for iPhone, iPad, Apple TV and Android.",
-    url: "https://streamyfin.app",
+    title,
+    description,
+    url: "/",
     siteName: "Streamyfin",
+    locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
   },
 };
 
@@ -34,15 +50,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main>
-          {children}
-        </main>
+        <main>{children}</main>
         <Analytics />
       </body>
     </html>
