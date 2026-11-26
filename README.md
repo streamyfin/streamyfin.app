@@ -5,7 +5,6 @@
 </p>
 
 <p align="center">
-  <a href="https://streamyfin.app"><img alt="Website" src="https://img.shields.io/badge/Website-streamyfin.app-24292f?style=flat-square"></a>
   <a href="https://discord.streamyfin.app"><img alt="Discord" src="https://img.shields.io/badge/Discord-Streamyfin-blue?style=flat-square&logo=discord"></a>
   <a href="https://www.reddit.com/r/streamyfin/"><img alt="Reddit" src="https://img.shields.io/badge/Reddit-r--streamyfin-FF4500?style=flat-square&logo=reddit"></a>
 </p>
